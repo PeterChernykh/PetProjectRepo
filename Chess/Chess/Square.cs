@@ -10,6 +10,7 @@ namespace ChessGame
     {
         public int X { get; private set; }
         public int Y { get; private set; }
+        public string Name { get { return ((char)('a' + X)).ToString() + (Y + 1).ToString(); } }
         public static Square none = new Square(-1, -1);
 
         public Square(int x, int y)
@@ -35,17 +36,17 @@ namespace ChessGame
             }
         }
 
-        public bool IsOnBoard() => X >= 0 && X <= 8 && Y >= 0 && Y <= 8;
+        public bool IsOnBoard() => X >= 0 && X <= 7 && Y >= 0 && Y <= 7;
 
         public static bool operator == (Square a, Square b) => a.X == b.X && a.Y == b.Y;
 
-        public static bool operator != (Square a, Square b) => a.X != b.X && a.Y != b.Y;
+        public static bool operator != (Square a, Square b) => a.X != b.X || a.Y != b.Y;
 
         public static IEnumerable<Square> YieldSquares()
         {
-            for(int x = 0; x<8; x++)
+            for(int x = 0; x <= 7; x++)
             {
-                for (int y = 0; y<8; y++)
+                for (int y = 0; y <= 7; y++)
                 {
                     yield return new Square(x , y);
                 }

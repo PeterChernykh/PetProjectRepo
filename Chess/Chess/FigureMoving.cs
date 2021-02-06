@@ -39,5 +39,13 @@ namespace ChessGame
 
         public int SignX { get { return Math.Sign(DeltaX); } } //возвращает знак
         public int SignY { get { return Math.Sign(DeltaY); } }
+
+        public override string ToString()
+        {
+            string text = (char)Figure + From.Name + To.Name;
+            if (Promotion != Figure.none)
+                text += (char)Promotion;
+            return text;
+        }
     }
 }

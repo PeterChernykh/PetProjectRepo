@@ -78,12 +78,15 @@ namespace ChessGame
 
         public List<string> GetAllMoves()
         {
+            FindAllMoves();
             List<string> list = new List<string>();
 
             foreach (FigureMoving fm in allPossibleMoves)
             {
                 list.Add(fm.ToString());
             }
+
+            return list;
         }
     }
 }

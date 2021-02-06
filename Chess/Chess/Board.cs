@@ -107,7 +107,6 @@ namespace ChessGame
             if (square.IsOnBoard())
             {
                 figureAt = Figures[square.X, square.Y];
-
             }
 
             return figureAt;

@@ -11,11 +11,17 @@ namespace ChessDemo
     {
         static void Main(string[] args)
         {
-            Chess chess = new Chess("rnbqkbnr/p111111p/8/8/8/8/P111111P/RNBQKBNR w KQkq - 0 0");
+            Chess chess = new Chess("rnbqkbnr/1p1111p1/8/8/8/8/1P1111P1/RNBQKBNR w KQkq - 0 0");
 
             while (true)
             {
                 Console.WriteLine(chess.GetFen());
+                foreach (string moves in chess.GetAllMoves())
+                {
+                    Console.WriteLine(moves +"\t");
+                }
+                Console.WriteLine();
+                Console.WriteLine("> ");
                 Console.WriteLine(ChessToAscii(chess));
                 string move = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(move))
@@ -32,7 +38,7 @@ namespace ChessDemo
             {
                 text += y + 1;
                 text += " | ";
-                for (int x =0; x<8; x++)
+                for (int x =0; x<=7; x++)
                 {
                     text += chess.GetFigureAt(x, y) + " ";
                 }
