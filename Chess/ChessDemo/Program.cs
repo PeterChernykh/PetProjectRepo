@@ -20,9 +20,10 @@ namespace ChessDemo
                 {
                     Console.WriteLine(moves +"\t");
                 }
+                Console.WriteLine(chess.IsCheck()?"CHECK!":"");
                 Console.WriteLine();
-                Console.WriteLine("> ");
                 Console.WriteLine(ChessToAscii(chess));
+                Console.Write("> ");
                 string move = Console.ReadLine();
                 if (!string.IsNullOrWhiteSpace(move))
                 {

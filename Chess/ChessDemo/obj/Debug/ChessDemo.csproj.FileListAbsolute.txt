@@ -8,3 +8,13 @@ C:\Users\Peter\source\repos\Chess\ChessDemo\obj\Debug\ChessDemo.csproj.CoreCompi
 C:\Users\Peter\source\repos\Chess\ChessDemo\obj\Debug\ChessDemo.csproj.CopyComplete
 C:\Users\Peter\source\repos\Chess\ChessDemo\obj\Debug\ChessDemo.exe
 C:\Users\Peter\source\repos\Chess\ChessDemo\obj\Debug\ChessDemo.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\obj\Debug\ChessDemo.csprojAssemblyReference.cache
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\obj\Debug\ChessDemo.csproj.CoreCompileInputs.cache
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\obj\Debug\ChessDemo.exe
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\obj\Debug\ChessDemo.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\bin\Debug\ChessDemo.exe.config
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\bin\Debug\ChessDemo.exe
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\bin\Debug\ChessDemo.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\bin\Debug\Chess.dll
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\bin\Debug\Chess.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\ChessDemo\obj\Debug\ChessDemo.csproj.CopyComplete

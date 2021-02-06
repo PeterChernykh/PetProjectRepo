@@ -147,5 +147,55 @@ namespace ChessGame
                 }
             }
         }
+
+        public bool IsCheck()
+        {
+            Board after = new Board(Fen);
+            after.MoveColor = MoveColor.FlipColor();
+
+            bool result = after.CanEatKing();
+
+            return result;
+        }
+
+        private bool CanEatKing()
+        {
+            Square oppKing = FindOpponentKing();
+            Moves moves = new Moves(this);
+
+            foreach (FigureOnSquare fs in YieldFigures())
+            {
+                FigureMoving fm = new FigureMoving(oppKing, fs);
+
+                if (moves.CanMove(fm))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private Square FindOpponentKing()
+        {
+            Figure oppKing = MoveColor == Color.black ? Figure.WhiteKing : Figure.BlackKing;
+            foreach (Square square in Square.YieldSquares())
+            {
+                if(GetFigureAt(square) == oppKing)
+                {
+                    return square;
+                }
+            }
+
+            return Square.none;
+        }
+
+        public bool IsCheckAfterMove(FigureMoving fm)
+        {
+            Board after = Move(fm);
+
+            bool result = after.CanEatKing();
+
+            return result;
+        }
     }
 }

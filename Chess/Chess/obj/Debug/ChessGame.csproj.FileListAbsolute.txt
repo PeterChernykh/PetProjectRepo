@@ -4,3 +4,9 @@ C:\Users\Peter\source\repos\Chess\Chess\obj\Debug\ChessGame.csprojAssemblyRefere
 C:\Users\Peter\source\repos\Chess\Chess\obj\Debug\ChessGame.csproj.CoreCompileInputs.cache
 C:\Users\Peter\source\repos\Chess\Chess\obj\Debug\Chess.dll
 C:\Users\Peter\source\repos\Chess\Chess\obj\Debug\Chess.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\obj\Debug\ChessGame.csprojAssemblyReference.cache
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\obj\Debug\ChessGame.csproj.CoreCompileInputs.cache
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\obj\Debug\Chess.dll
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\obj\Debug\Chess.pdb
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\bin\Debug\Chess.dll
+G:\Repositories\PetProjectRepo\PetProjectRepo\Chess\Chess\bin\Debug\Chess.pdb

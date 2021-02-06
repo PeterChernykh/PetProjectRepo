@@ -38,6 +38,11 @@ namespace ChessGame
 
             if (!moves.CanMove(fm))
             {
+                return this;
+            }
+
+            if (board.IsCheckAfterMove(fm))
+            {
                 return this; //the same board
             }
 
@@ -70,7 +75,10 @@ namespace ChessGame
                     FigureMoving fm = new FigureMoving(to, fs);
                     if (moves.CanMove(fm))
                     {
-                        allPossibleMoves.Add(fm);
+                        if (!board.IsCheckAfterMove(fm))
+                        {
+                            allPossibleMoves.Add(fm);
+                        }
                     }
                 }
             }
@@ -88,5 +96,7 @@ namespace ChessGame
 
             return list;
         }
+
+        public bool IsCheck() => board.IsCheck();
     }
 }
